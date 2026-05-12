@@ -44,7 +44,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #1a1a1a; }
 </head>
 <body>
 <canvas id="renderCanvas"></canvas>
-<button id="launchBtn" aria-label="打ち上げ">🎆</button>
+<button id="launchBtn" aria-label="打ち上げ"></button>
 
 <script src="https://cdn.babylonjs.com/babylon.js"></script>
 <script>
@@ -226,7 +226,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #1a1a1a; }
   function burst(x, y, big) {
     const pattern = BURST_PATTERNS[Math.floor(Math.random() * BURST_PATTERNS.length)];
     const baseCount = big ? 120 : 55;
-    const baseRadius = big ? 3.0 : 1.8;
+    const baseRadius = big ? 3.0 : 17;
     const life = big ? 2.2 : 1.5;
     const colors = big ? randColors(3) : [randColor()];
 
